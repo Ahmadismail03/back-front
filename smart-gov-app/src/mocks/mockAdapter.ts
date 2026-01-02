@@ -99,6 +99,52 @@ function materializeNotification(locale: 'en' | 'ar', n: any) {
   };
 }
 
+function pad2(n: number): string {
+  return String(n).padStart(2, '0');
+}
+
+function isoDate(d: Date): string {
+  return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
+}
+
+function addDays(base: Date, days: number): Date {
+  const d = new Date(base);
+  d.setDate(d.getDate() + days);
+  return d;
+}
+
+// Temporary fallback until backend exposes real availability.
+// Generates hourly slots for the next year, all available.
+function generateTemporarySlots(serviceId: string, days: number = 365) {
+  const today = new Date();
+  const slots: Array<{
+    id: string;
+    serviceId: string;
+    date: string;
+    startTime: string;
+    endTime: string;
+    isAvailable: boolean;
+  }> = [];
+
+  for (let i = 0; i < days; i += 1) {
+    const date = isoDate(addDays(today, i));
+    for (let hour = 0; hour < 24; hour += 1) {
+      const startTime = `${pad2(hour)}:00`;
+      const endTime = `${pad2((hour + 1) % 24)}:00`;
+      slots.push({
+        id: `slot_${serviceId}_${date}_${startTime}`,
+        serviceId,
+        date,
+        startTime,
+        endTime,
+        isAvailable: true,
+      });
+    }
+  }
+
+  return slots;
+}
+
 export const mockAdapter: AxiosAdapter = async (config) => {
   await delay(250);
 
@@ -130,7 +176,8 @@ export const mockAdapter: AxiosAdapter = async (config) => {
   const slotsMatch = path.match(/^\/services\/([^/]+)\/slots$/);
   if (method === 'get' && slotsMatch) {
     const id = slotsMatch[1];
-    const slots = mockDb.slotsByServiceId[id] ?? [];
+    const slots = generateTemporarySlots(id);
+    (mockDb.slotsByServiceId as any)[id] = slots;
     return json(config, 200, slots);
   }
 
