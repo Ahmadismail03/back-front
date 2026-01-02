@@ -1,0 +1,682 @@
+{
+  "services": [
+    {
+      "id": "ISSUE_ID_FIRST_TIME",
+      "canonical_name": "اصدار هوية لأول مرة",
+      "description": "إصدار بطاقة هوية فلسطينية لأول مرة للمواطنين الذين أتموا السن القانوني.",
+      "search_text": "اصدار هوية لأول مرة إصدار بطاقة هوية فلسطينية لأول مرة للمواطنين الذين أتموا السن القانوني.",
+      "voice_text": "خدمة إصدار هوية لأول مرة للحصول على بطاقة هوية فلسطينية.",
+      "price": 2.00,
+      "currency": "JOD",
+      "is_active": true
+    },
+    {
+      "id": "ISSUE_ID_DAMAGED",
+      "canonical_name": "اصدار هوية بدل هوية تالفه",
+      "description": "إصدار بطاقة هوية بديلة في حال تلف الهوية.",
+      "search_text": "اصدار هوية بدل هوية تالفه إصدار بطاقة هوية بديلة في حال تلف الهوية.",
+      "voice_text": "خدمة إصدار هوية بدل تالف لاستبدال الهوية التالفة.",
+      "price": 7.00,
+      "currency": "JOD",
+      "is_active": true
+    },
+    {
+      "id": "ISSUE_ID_LOST",
+      "canonical_name": "اصدار هوية مفقودة",
+      "description": "إصدار بطاقة هوية بديلة في حال فقدان الهوية.",
+      "search_text": "إصدار هوية مفقودة إصدار بطاقة هوية بديلة في حال فقدان الهوية.",
+      "voice_text": "خدمة إصدار هوية مفقودة عند فقدان بطاقة الهوية.",
+      "price": 24.00,
+      "currency": "JOD",
+      "is_active": true
+    },
+    {
+      "id": "ISSUE_ID_PRISONER",
+      "canonical_name": "اصدار هوية أسير أمني محرر",
+      "description": "إصدار بطاقة هوية للأسرى الأمنيين المحررين.",
+      "search_text": "إصدار هوية أسير أمني محرر إصدار بطاقة هوية.",
+      "voice_text": "خدمة إصدار هوية لأسير أمني محرر بعد الإفراج.",
+      "price": null,
+      "currency": "JOD",
+      "is_active": true
+    },
+    {
+      "id": "ISSUE_ID_REUNIFICATION",
+      "canonical_name": "اصدار هوية جمع شمل خارجي",
+      "description": "إصدار بطاقة هوية ضمن معاملات جمع الشمل الخارجي.",
+      "search_text": "إصدار هوية جمع شمل خارجي معاملات جمع الشمل.",
+      "voice_text": "خدمة إصدار هوية ضمن إجراءات جمع الشمل الخارجي.",
+      "price": null,
+      "currency": "JOD",
+      "is_active": true
+    },
+
+    {
+      "id": "REGISTER_BIRTH",
+      "canonical_name": "تسجيل مولود",
+      "description": "تسجيل واقعة ولادة داخل البلاد.",
+      "search_text": "تسجيل مولود تسجيل واقعة ولادة داخل البلاد.",
+      "voice_text": "خدمة تسجيل مولود داخل الأراضي الفلسطينية.",
+      "price": null,
+      "currency": "JOD",
+      "is_active": true
+    },
+    {
+      "id": "REGISTER_BIRTH_ABROAD",
+      "canonical_name": "تسجيل مولود خارج البلاد",
+      "description": "تسجيل مولود فلسطيني وُلد خارج البلاد.",
+      "search_text": "تسجيل مولود خارج البلاد تسجيل مولود فلسطيني.",
+      "voice_text": "خدمة تسجيل مولود وُلد خارج البلاد.",
+      "price": 10.00,
+      "currency": "JOD",
+      "is_active": true
+    },
+    {
+      "id": "REGISTER_BIRTH_NON_CITIZEN",
+      "canonical_name": "تسجيل مولود لغير مواطنين",
+      "description": "تسجيل مولود لأبوين غير فلسطينيين.",
+      "search_text": "تسجيل مولود لغير مواطنين تسجيل مولود.",
+      "voice_text": "خدمة تسجيل مولود لغير المواطنين.",
+      "price": 10.00,
+      "currency": "JOD",
+      "is_active": true
+    },
+
+    {
+      "id": "REGISTER_DEATH_LOCAL",
+      "canonical_name": "تسجيل وفاة داخل البلاد ( مواطنين)",
+      "description": "تسجيل حالة وفاة لمواطن داخل البلاد.",
+      "search_text": "تسجيل وفاة داخل البلاد تسجيل حالة وفاة.",
+      "voice_text": "خدمة تسجيل وفاة لمواطن داخل البلاد.",
+      "price": null,
+      "currency": "JOD",
+      "is_active": true
+    },
+    {
+      "id": "REGISTER_DEATH_ABROAD",
+      "canonical_name": "تسجيل وفاه مواطن خارج البلاد",
+      "description": "تسجيل وفاة مواطن خارج البلاد.",
+      "search_text": "تسجيل وفاة مواطن خارج البلاد.",
+      "voice_text": "خدمة تسجيل وفاة مواطن خارج البلاد.",
+      "price": null,
+      "currency": "JOD",
+      "is_active": true
+    },
+    {
+      "id": "REGISTER_DEATH_VISITOR",
+      "canonical_name": "تسجيل وفاة زائرين",
+      "description": "تسجيل وفاة زائر داخل الأراضي الفلسطينية.",
+      "search_text": "تسجيل وفاة زائرين تسجيل وفاة زائر.",
+      "voice_text": "خدمة تسجيل وفاة الزائرين داخل البلاد.",
+      "price": null,
+      "currency": "JOD",
+      "is_active": true
+    },
+
+    {
+      "id": "MARITAL_STATUS_CITIZENS",
+      "canonical_name": "تغيير حالة اجتماعية ( زواج ) لمواطنين",
+      "description": "تغيير الحالة الاجتماعية إلى متزوج لمواطنين.",
+      "search_text": "تغيير حالة اجتماعية زواج لمواطنين.",
+      "voice_text": "خدمة تغيير الحالة الاجتماعية إلى متزوج لمواطنين.",
+      "price": 5.00,
+      "currency": "JOD",
+      "is_active": true
+    },
+    {
+      "id": "MARITAL_STATUS_MIXED",
+      "canonical_name": "تغيير حالة اجتماعية (زواج) أحدهما مواطن",
+      "description": "تغيير الحالة الاجتماعية عند زواج أحد الزوجين مواطن.",
+      "search_text": "تغيير حالة اجتماعية زواج أحدهما مواطن.",
+      "voice_text": "خدمة تغيير الحالة الاجتماعية في حال كان أحد الزوجين مواطن.",
+      "price": 5.00,
+      "currency": "JOD",
+      "is_active": true
+    },
+    {
+      "id": "MARITAL_STATUS_WIDOW",
+      "canonical_name": "تغيير حالة اجتماعية (أرمل)",
+      "description": "تغيير الحالة الاجتماعية إلى أرمل.",
+      "search_text": "تغيير حالة اجتماعية أرمل.",
+      "voice_text": "خدمة تغيير الحالة الاجتماعية إلى أرمل.",
+      "price": 5.00,
+      "currency": "JOD",
+      "is_active": true
+    },
+
+    {
+      "id": "CHANGE_ADDRESS",
+      "canonical_name": "تغيير مكان الاقامة ( عنوان )",
+      "description": "تغيير عنوان الإقامة الرسمي.",
+      "search_text": "تغيير مكان الاقامة تغيير العنوان.",
+      "voice_text": "خدمة تغيير مكان الإقامة للمواطن.",
+      "price": 5.00,
+      "currency": "JOD",
+      "is_active": true
+    },
+
+    {
+      "id": "ID_APPENDIX",
+      "canonical_name": "اصدار ملحق هوية برسوم",
+      "description": "إصدار ملحق إضافي لبطاقة الهوية.",
+      "search_text": "إصدار ملحق هوية برسوم.",
+      "voice_text": "خدمة إصدار ملحق هوية مقابل رسوم.",
+      "price": 5.00,
+      "currency": "JOD",
+      "is_active": true
+    },
+
+    {
+      "id": "BIRTH_CERTIFICATE",
+      "canonical_name": "إصدار شهادة ميلاد برسوم",
+      "description": "إصدار شهادة ميلاد رسمية.",
+      "search_text": "إصدار شهادة ميلاد برسوم.",
+      "voice_text": "خدمة إصدار شهادة ميلاد رسمية مقابل رسوم.",
+      "price": 2.00,
+      "currency": "JOD",
+      "is_active": true
+    },
+    {
+      "id": "DEATH_CERTIFICATE",
+      "canonical_name": "إصدار شهادة وفاة برسوم",
+      "description": "إصدار شهادة وفاة رسمية.",
+      "search_text": "إصدار شهادة وفاة برسوم.",
+      "voice_text": "خدمة إصدار شهادة وفاة رسمية مقابل رسوم.",
+      "price": 2.00,
+      "currency": "JOD",
+      "is_active": true
+    },
+
+    {
+      "id": "FAMILY_REUNIFICATION",
+      "canonical_name": "تقديم طلب جمع شمل",
+      "description": "تقديم طلب رسمي لإجراءات جمع الشمل.",
+      "search_text": "تقديم طلب جمع شمل.",
+      "voice_text": "خدمة تقديم طلب جمع شمل عائلي.",
+      "price": 20.00,
+      "currency": "JOD",
+      "is_active": true
+    },
+
+    {
+      "id": "RESTORE_CITIZENSHIP_MINOR",
+      "canonical_name": "إعادة المواطنة لمولود أقل من 16 سنة",
+      "description": "إعادة منح المواطنة لمولود دون 16 سنة.",
+      "search_text": "إعادة المواطنة لمولود أقل من 16 سنة.",
+      "voice_text": "خدمة إعادة المواطنة لمولود أقل من ستة عشر عامًا.",
+      "price": null,
+      "currency": "JOD",
+      "is_active": true
+    },
+    {
+      "id": "RESTORE_CITIZENSHIP_ADULT",
+      "canonical_name": "إعادة المواطنة لمواطن يحمل بطاقة هوية",
+      "description": "إعادة منح المواطنة لمواطن فاقد لمواطنيته.",
+      "search_text": "إعادة المواطنة لمواطن يحمل بطاقة هوية.",
+      "voice_text": "خدمة إعادة المواطنة لمواطن يحمل بطاقة هوية.",
+      "price": 7.00,
+      "currency": "JOD",
+      "is_active": true
+    },
+
+    {
+      "id": "MARRIAGE_DIVORCE_ATTESTATION",
+      "canonical_name": "توثيق عقود الزواج والطلاق",
+      "description": "توثيق عقود الزواج والطلاق التي تمت في الخارج.",
+      "search_text": "توثيق عقود الزواج والطلاق.",
+      "voice_text": "خدمة توثيق عقود الزواج والطلاق للمواطنين في الخارج.",
+      "price": 0.00,
+      "currency": "JOD",
+      "is_active": true
+    },
+
+    {
+      "id": "DRIVING_LICENSE_REPLACEMENT",
+      "canonical_name": "إصدار رخصة سائق بدل فاقد / تالف",
+      "description": "إصدار رخصة قيادة بديلة في حال الفقدان أو التلف.",
+      "search_text": "إصدار رخصة سائق بدل فاقد أو تالف.",
+      "voice_text": "خدمة إصدار رخصة سائق بدل فاقد أو تالف.",
+      "price": null,
+      "currency": "JOD",
+      "is_active": true
+    }
+  ],
+
+  "service_documents": [
+
+  {
+    "id": "DOC_ISSUE_ID_DAMAGED_01",
+    "service_id": "ISSUE_ID_DAMAGED",
+    "document_name": "نموذج طلب إصدار هوية تالفة",
+    "document_type": "FORM",
+    "description": "نموذج طلب من مكتب الخدمات.",
+    "voice_text": "يجب تعبئة نموذج طلب إصدار هوية بدل تالف من مكتب الخدمات.",
+    "is_required": true,
+    "sort_order": 1
+  },
+  {
+    "id": "DOC_ISSUE_ID_DAMAGED_02",
+    "service_id": "ISSUE_ID_DAMAGED",
+    "document_name": "صور شخصية",
+    "document_type": "PHOTO",
+    "description": "أربع صور شخصية حديثة بخلفية زرقاء وتنطبق شروط الصور المعتمدة.",
+    "voice_text": "يجب إحضار أربع صور شخصية حديثة بخلفية زرقاء.",
+    "is_required": true,
+    "sort_order": 2
+  },
+  {
+    "id": "DOC_ISSUE_ID_DAMAGED_03",
+    "service_id": "ISSUE_ID_DAMAGED",
+    "document_name": "الهوية التالفة",
+    "document_type": "IDENTITY",
+    "description": "صورة واضحة عن الهوية التالفة عدد نسختين.",
+    "voice_text": "يجب إحضار صورة واضحة عن الهوية التالفة عدد نسختين.",
+    "is_required": true,
+    "sort_order": 3
+  },
+
+  {
+    "id": "DOC_ISSUE_ID_LOST_01",
+    "service_id": "ISSUE_ID_LOST",
+    "document_name": "نموذج طلب إصدار هوية مفقودة",
+    "document_type": "FORM",
+    "description": "نموذج طلب من مكتب الخدمات.",
+    "voice_text": "يجب تعبئة نموذج طلب إصدار هوية مفقودة من مكتب الخدمات.",
+    "is_required": true,
+    "sort_order": 1
+  },
+  {
+    "id": "DOC_ISSUE_ID_LOST_02",
+    "service_id": "ISSUE_ID_LOST",
+    "document_name": "صور شخصية",
+    "document_type": "PHOTO",
+    "description": "أربع صور شخصية حديثة بخلفية زرقاء.",
+    "voice_text": "يجب إحضار أربع صور شخصية حديثة بخلفية زرقاء.",
+    "is_required": true,
+    "sort_order": 2
+  },
+  {
+    "id": "DOC_ISSUE_ID_LOST_03",
+    "service_id": "ISSUE_ID_LOST",
+    "document_name": "إعلان فقدان وبلاغ شرطة",
+    "document_type": "REPORT",
+    "description": "إعلان فقدان في صحيفة وبلاغ شرطة رسمي.",
+    "voice_text": "يجب إحضار إعلان فقدان من صحيفة وبلاغ شرطة رسمي.",
+    "is_required": true,
+    "sort_order": 3
+  },
+
+  {
+    "id": "DOC_ISSUE_ID_PRISONER_01",
+    "service_id": "ISSUE_ID_PRISONER",
+    "document_name": "كتاب وزارة الأسرى",
+    "document_type": "CERTIFICATE",
+    "description": "كتاب رسمي صادر عن وزارة الأسرى.",
+    "voice_text": "يجب إحضار كتاب رسمي صادر عن وزارة الأسرى.",
+    "is_required": true,
+    "sort_order": 1
+  },
+  {
+    "id": "DOC_ISSUE_ID_PRISONER_02",
+    "service_id": "ISSUE_ID_PRISONER",
+    "document_name": "كتاب الصليب الأحمر",
+    "document_type": "CERTIFICATE",
+    "description": "كتاب رسمي صادر عن الصليب الأحمر.",
+    "voice_text": "يجب إحضار كتاب رسمي صادر عن الصليب الأحمر.",
+    "is_required": true,
+    "sort_order": 2
+  },
+  {
+    "id": "DOC_ISSUE_ID_PRISONER_03",
+    "service_id": "ISSUE_ID_PRISONER",
+    "document_name": "ورقة الإفراج",
+    "document_type": "CERTIFICATE",
+    "description": "وثيقة الإفراج الرسمية.",
+    "voice_text": "يجب إحضار ورقة الإفراج الرسمية.",
+    "is_required": true,
+    "sort_order": 3
+  },
+  {
+    "id": "DOC_ISSUE_ID_REUNIFICATION_01",
+    "service_id": "ISSUE_ID_REUNIFICATION",
+    "document_name": "نموذج طلب إصدار هوية أولى",
+    "document_type": "FORM",
+    "description": "نموذج طلب من مكتب الخدمات.",
+    "voice_text": "يجب تعبئة نموذج طلب إصدار هوية أولى من مكتب الخدمات.",
+    "is_required": true,
+    "sort_order": 1
+  },
+  {
+    "id": "DOC_ISSUE_ID_REUNIFICATION_02",
+    "service_id": "ISSUE_ID_REUNIFICATION",
+    "document_name": "موافقة جمع شمل",
+    "document_type": "CERTIFICATE",
+    "description": "موافقة رسمية على طلب جمع الشمل.",
+    "voice_text": "يجب إحضار موافقة رسمية على طلب جمع الشمل.",
+    "is_required": true,
+    "sort_order": 2
+  },
+  {
+    "id": "DOC_ISSUE_ID_REUNIFICATION_03",
+    "service_id": "ISSUE_ID_REUNIFICATION",
+    "document_name": "إثبات الدخول",
+    "document_type": "IDENTITY",
+    "description": "تصريح أو فيزا مع وثيقة السفر.",
+    "voice_text": "يجب إحضار تصريح الدخول أو الفيزا مع وثيقة السفر.",
+    "is_required": true,
+    "sort_order": 3
+  },
+  {
+    "id": "DOC_REGISTER_BIRTH_01",
+    "service_id": "REGISTER_BIRTH",
+    "document_name": "تبليغ ولادة",
+    "document_type": "CERTIFICATE",
+    "description": "تبليغ ولادة صادر عن مؤسسة صحية معتمدة.",
+    "voice_text": "يجب إحضار تبليغ ولادة معتمد من مؤسسة صحية.",
+    "is_required": true,
+    "sort_order": 1
+  },
+  {
+    "id": "DOC_REGISTER_BIRTH_02",
+    "service_id": "REGISTER_BIRTH",
+    "document_name": "عقد الزواج",
+    "document_type": "CERTIFICATE",
+    "description": "صورة عن عقد الزواج.",
+    "voice_text": "يجب إحضار صورة عن عقد الزواج.",
+    "is_required": true,
+    "sort_order": 2
+  },
+  {
+    "id": "DOC_REGISTER_BIRTH_03",
+    "service_id": "REGISTER_BIRTH",
+    "document_name": "هوية الوالدين",
+    "document_type": "IDENTITY",
+    "description": "صورة عن هوية الأب أو الأم.",
+    "voice_text": "يجب إحضار صورة عن هوية الأب أو الأم.",
+    "is_required": true,
+    "sort_order": 3
+  },
+  {
+    "id": "DOC_REGISTER_BIRTH_ABROAD_01",
+    "service_id": "REGISTER_BIRTH_ABROAD",
+    "document_name": "شهادة ميلاد",
+    "document_type": "CERTIFICATE",
+    "description": "شهادة ميلاد المولود من الخارج.",
+    "voice_text": "يجب إحضار شهادة ميلاد المولود الصادرة من الخارج.",
+    "is_required": true,
+    "sort_order": 1
+  },
+  {
+    "id": "DOC_REGISTER_BIRTH_ABROAD_02",
+    "service_id": "REGISTER_BIRTH_ABROAD",
+    "document_name": "وثيقة دخول أو فيزا",
+    "document_type": "IDENTITY",
+    "description": "وثيقة الدخول أو الفيزا.",
+    "voice_text": "يجب إحضار وثيقة الدخول أو الفيزا.",
+    "is_required": true,
+    "sort_order": 2
+  },
+  {
+    "id": "DOC_REGISTER_BIRTH_NON_CITIZEN_01",
+    "service_id": "REGISTER_BIRTH_NON_CITIZEN",
+    "document_name": "تبليغ ولادة",
+    "document_type": "CERTIFICATE",
+    "description": "تبليغ ولادة صادر عن مؤسسة صحية معتمدة.",
+    "voice_text": "يجب إحضار تبليغ ولادة صادر عن مؤسسة صحية.",
+    "is_required": true,
+    "sort_order": 1
+  },
+  {
+    "id": "DOC_REGISTER_BIRTH_NON_CITIZEN_02",
+    "service_id": "REGISTER_BIRTH_NON_CITIZEN",
+    "document_name": "وثائق الوالدين",
+    "document_type": "IDENTITY",
+    "description": "وثيقة الزوج والزوجة مع إثبات الدخول.",
+    "voice_text": "يجب إحضار وثائق الزوجين مع إثبات الدخول.",
+    "is_required": true,
+    "sort_order": 2
+  },
+  {
+    "id": "DOC_REGISTER_DEATH_LOCAL_01",
+    "service_id": "REGISTER_DEATH_LOCAL",
+    "document_name": "تبليغ وفاة",
+    "document_type": "CERTIFICATE",
+    "description": "تبليغ وفاة مختوم من وزارة الصحة.",
+    "voice_text": "يجب إحضار تبليغ وفاة مختوم من وزارة الصحة.",
+    "is_required": true,
+    "sort_order": 1
+  },
+  {
+    "id": "DOC_REGISTER_DEATH_LOCAL_02",
+    "service_id": "REGISTER_DEATH_LOCAL",
+    "document_name": "تصريح دفن",
+    "document_type": "CERTIFICATE",
+    "description": "تصريح الدفن الرسمي.",
+    "voice_text": "يجب إحضار تصريح الدفن الرسمي.",
+    "is_required": true,
+    "sort_order": 2
+  },
+  {
+    "id": "DOC_CHANGE_ADDRESS_01",
+    "service_id": "CHANGE_ADDRESS",
+    "document_name": "نموذج تغيير عنوان",
+    "document_type": "FORM",
+    "description": "نموذج تغيير عنوان من مكتب الخدمات.",
+    "voice_text": "يجب تعبئة نموذج تغيير عنوان من مكتب الخدمات.",
+    "is_required": true,
+    "sort_order": 1
+  },
+  {
+    "id": "DOC_CHANGE_ADDRESS_02",
+    "service_id": "CHANGE_ADDRESS",
+    "document_name": "مستند إثبات سكن",
+    "document_type": "OTHER",
+    "description": "عقد إيجار أو فاتورة كهرباء أو شهادة هيئة محلية.",
+    "voice_text": "يجب إحضار مستند يثبت مكان السكن مثل عقد إيجار أو فاتورة.",
+    "is_required": true,
+    "sort_order": 2
+  },
+  {
+    "id": "DOC_DRIVING_LICENSE_REPLACEMENT_01",
+    "service_id": "DRIVING_LICENSE_REPLACEMENT",
+    "document_name": "قرار بدل فاقد",
+    "document_type": "FORM",
+    "description": "قرار بدل فاقد من دوائر الترخيص.",
+    "voice_text": "يجب إحضار قرار بدل فاقد صادر عن دائرة الترخيص.",
+    "is_required": true,
+    "sort_order": 1
+  },
+  {
+    "id": "DOC_DRIVING_LICENSE_REPLACEMENT_02",
+    "service_id": "DRIVING_LICENSE_REPLACEMENT",
+    "document_name": "الهوية الشخصية",
+    "document_type": "IDENTITY",
+    "description": "صورة عن الهوية الشخصية أو جواز السفر.",
+    "voice_text": "يجب إحضار صورة عن الهوية الشخصية أو جواز السفر.",
+    "is_required": true,
+    "sort_order": 2
+  },
+    {
+      "id": "DOC_BIRTH_CERTIFICATE_01",
+      "service_id": "BIRTH_CERTIFICATE",
+      "document_name": "نموذج طلب إصدار شهادة ميلاد",
+      "document_type": "FORM",
+      "description": "يتم تعبئته في مكتب الخدمات.",
+      "voice_text": "يجب تعبئة نموذج طلب إصدار شهادة ميلاد.",
+      "is_required": true,
+      "sort_order": 1
+    },
+    {
+      "id": "DOC_BIRTH_CERTIFICATE_02",
+      "service_id": "BIRTH_CERTIFICATE",
+      "document_name": "صورة هوية مقدم الطلب",
+      "document_type": "IDENTITY",
+      "description": "لأحد الوالدين أو صاحب العلاقة.",
+      "voice_text": "إحضار صورة عن هوية مقدم الطلب.",
+      "is_required": true,
+      "sort_order": 2
+    },
+    {
+      "id": "DOC_DEATH_CERTIFICATE_01",
+      "service_id": "DEATH_CERTIFICATE",
+      "document_name": "نموذج طلب إصدار شهادة وفاة",
+      "document_type": "FORM",
+      "description": "يتم تعبئته في مكتب الخدمات.",
+      "voice_text": "تعبئة نموذج طلب إصدار شهادة وفاة.",
+      "is_required": true,
+      "sort_order": 1
+    },
+    {
+      "id": "DOC_DEATH_CERTIFICATE_02",
+      "service_id": "DEATH_CERTIFICATE",
+      "document_name": "هوية أحد أقارب المتوفى",
+      "document_type": "IDENTITY",
+      "description": "قريب من الدرجة الأولى.",
+      "voice_text": "إحضار هوية أحد أقارب المتوفى من الدرجة الأولى.",
+      "is_required": true,
+      "sort_order": 2
+    },
+    {
+      "id": "DOC_FAMILY_REUNIFICATION_01",
+      "service_id": "FAMILY_REUNIFICATION",
+      "document_name": "نموذج طلب جمع شمل",
+      "document_type": "FORM",
+      "description": "يتم تعبئته من قبل مقدم الطلب.",
+      "voice_text": "تعبئة نموذج طلب جمع شمل.",
+      "is_required": true,
+      "sort_order": 1
+    },
+    {
+      "id": "DOC_FAMILY_REUNIFICATION_02",
+      "service_id": "FAMILY_REUNIFICATION",
+      "document_name": "صورة هوية مقدم الطلب",
+      "document_type": "IDENTITY",
+      "description": "نسخة سارية المفعول.",
+      "voice_text": "إحضار صورة عن هوية مقدم الطلب.",
+      "is_required": true,
+      "sort_order": 2
+    },
+    {
+      "id": "DOC_ID_APPENDIX_01",
+      "service_id": "ID_APPENDIX",
+      "document_name": "نموذج طلب إصدار ملحق هوية",
+      "document_type": "FORM",
+      "description": "من مكتب الخدمات.",
+      "voice_text": "تعبئة نموذج طلب إصدار ملحق هوية.",
+      "is_required": true,
+      "sort_order": 1
+    },
+    {
+      "id": "DOC_ID_APPENDIX_02",
+      "service_id": "ID_APPENDIX",
+      "document_name": "الهوية الأصلية",
+      "document_type": "IDENTITY",
+      "description": "سارية المفعول.",
+      "voice_text": "إحضار الهوية الأصلية سارية المفعول.",
+      "is_required": true,
+      "sort_order": 2
+    },
+    {
+      "id": "DOC_ISSUE_ID_FIRST_TIME_01",
+      "service_id": "ISSUE_ID_FIRST_TIME",
+      "document_name": "نموذج طلب إصدار هوية لأول مرة",
+      "document_type": "FORM",
+      "description": "من مكتب الخدمات.",
+      "voice_text": "تعبئة نموذج طلب إصدار هوية لأول مرة.",
+      "is_required": true,
+      "sort_order": 1
+    },
+    {
+      "id": "DOC_ISSUE_ID_FIRST_TIME_02",
+      "service_id": "ISSUE_ID_FIRST_TIME",
+      "document_name": "أربع صور شخصية حديثة",
+      "document_type": "PHOTO",
+      "description": "خلفية زرقاء.",
+      "voice_text": "إحضار أربع صور شخصية حديثة بخلفية زرقاء.",
+      "is_required": true,
+      "sort_order": 2
+    },
+    {
+      "id": "DOC_MARITAL_STATUS_CITIZENS_01",
+      "service_id": "MARITAL_STATUS_CITIZENS",
+      "document_name": "عقد زواج رسمي",
+      "document_type": "CERTIFICATE",
+      "description": "مصدّق حسب الأصول.",
+      "voice_text": "إحضار عقد زواج رسمي مصدّق.",
+      "is_required": true,
+      "sort_order": 1
+    },
+    {
+      "id": "DOC_MARITAL_STATUS_MIXED_01",
+      "service_id": "MARITAL_STATUS_MIXED",
+      "document_name": "عقد زواج مصدّق",
+      "document_type": "CERTIFICATE",
+      "description": "في حال أحد الزوجين غير مواطن.",
+      "voice_text": "إحضار عقد زواج مصدّق في حال أحد الزوجين غير مواطن.",
+      "is_required": true,
+      "sort_order": 1
+    },
+    {
+      "id": "DOC_MARITAL_STATUS_WIDOW_01",
+      "service_id": "MARITAL_STATUS_WIDOW",
+      "document_name": "شهادة وفاة الزوج",
+      "document_type": "CERTIFICATE",
+      "description": "أصلية أو مصدّقة.",
+      "voice_text": "إحضار شهادة وفاة الزوج.",
+      "is_required": true,
+      "sort_order": 1
+    },
+    {
+      "id": "DOC_MARRIAGE_DIVORCE_ATTESTATION_01",
+      "service_id": "MARRIAGE_DIVORCE_ATTESTATION",
+      "document_name": "عقد الزواج أو الطلاق",
+      "document_type": "CERTIFICATE",
+      "description": "مصدّق حسب الأصول.",
+      "voice_text": "إحضار عقد الزواج أو الطلاق مصدّق.",
+      "is_required": true,
+      "sort_order": 1
+    },
+    {
+      "id": "DOC_REGISTER_DEATH_ABROAD_01",
+      "service_id": "REGISTER_DEATH_ABROAD",
+      "document_name": "شهادة وفاة من خارج البلاد",
+      "document_type": "CERTIFICATE",
+      "description": "مصدّقة من الجهات المختصة.",
+      "voice_text": "إحضار شهادة وفاة مصدّقة من خارج البلاد.",
+      "is_required": true,
+      "sort_order": 1
+    },
+    {
+      "id": "DOC_REGISTER_DEATH_VISITOR_01",
+      "service_id": "REGISTER_DEATH_VISITOR",
+      "document_name": "وثيقة وفاة الزائر",
+      "document_type": "CERTIFICATE",
+      "description": "صادرة عن الجهات المختصة.",
+      "voice_text": "إحضار وثيقة وفاة الزائر من الجهات المختصة.",
+      "is_required": true,
+      "sort_order": 1
+    },
+    {
+      "id": "DOC_RESTORE_CITIZENSHIP_ADULT_01",
+      "service_id": "RESTORE_CITIZENSHIP_ADULT",
+      "document_name": "طلب استعادة المواطنة",
+      "document_type": "FORM",
+      "description": "للمواطن البالغ.",
+      "voice_text": "تعبئة طلب استعادة المواطنة للمواطن البالغ.",
+      "is_required": true,
+      "sort_order": 1
+    },
+
+    {
+      "id": "DOC_RESTORE_CITIZENSHIP_MINOR_01",
+      "service_id": "RESTORE_CITIZENSHIP_MINOR",
+      "document_name": "طلب استعادة المواطنة لقاصر",
+      "document_type": "FORM",
+      "description": "لمن هم دون 16 سنة.",
+      "voice_text": "تعبئة طلب استعادة المواطنة لمن هم دون 16 سنة.",
+      "is_required": true,
+      "sort_order": 1
+    }
+
+  ]
+}

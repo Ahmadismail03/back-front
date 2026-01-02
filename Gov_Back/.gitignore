@@ -1,0 +1,15 @@
+# dependencies
+node_modules/
+
+# prisma
+node_modules/.prisma/
+prisma/dev.db
+
+# env
+.env
+.env.*
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
